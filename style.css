@@ -42,20 +42,22 @@ h1{
 }
 
 
-.toggle-container{
+.toggle-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 
- 
 }
 
 
 .toggle-component {
   display: flex;
-  background-color:rgb(225, 220, 220);
+  background-color: rgb(225, 220, 220);
   border-radius: 4px;
   overflow: hidden;
   justify-content: center;
- 
- 
+  width:  700px;
+
 }
 
 .toggle-btn {
@@ -77,4 +79,86 @@ h1{
 .toggle-btn:not(.active):hover {
   background-color: rgb(169, 166, 166);
   
+}
+
+.card {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: 2px solid red;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-details {
+  padding: 16px;
+}
+
+.card-details h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.price {
+  margin-bottom: 16px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.discounted-price {
+  font-weight: bold;
+  color: #333;
+  margin-right: 8px;
+}
+
+.discount {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.add-to-cart {
+
+  background-color:black;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3
 }
