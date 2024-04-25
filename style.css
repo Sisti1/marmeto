@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
+/* html,
 body {
   height: 100%;
   width: 100%;
@@ -32,5 +32,49 @@ a:hover {
 }
 a:active {
   transform: scale(0.98);
+} */
+
+h1{
+  
+  font-weight: bolder;
+  text-align: center;
+  
 }
 
+
+.toggle-container{
+
+ 
+}
+
+
+.toggle-component {
+  display: flex;
+  background-color:rgb(225, 220, 220);
+  border-radius: 4px;
+  overflow: hidden;
+  justify-content: center;
+ 
+ 
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #0b0b0b;
+  font-weight: bold;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 500px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn.active {
+  background-color: black;
+  color: white;
+}
+
+.toggle-btn:not(.active):hover {
+  background-color: rgb(169, 166, 166);
+  
+}
