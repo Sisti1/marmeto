@@ -101,16 +101,20 @@ async function displayData(data,selectedCategory) {
       const discount = document.createElement('span');
       discount.classList.add('discount');
       discount.textContent = `${Math.floor(((product.compare_at_price - product.price) / product.compare_at_price) * 100)}% Off`;
+
+      
       const addToCartBtn = document.createElement('button');
       addToCartBtn.classList.add('add-to-cart');
       addToCartBtn.textContent = 'Add to Cart';
-
+      const space = document.createElement('div');
+      space.classList.add('space')
       // Append elements to card details
       price.appendChild(discountedPrice);
       price.appendChild(originalPrice);
       price.appendChild(discount);
       cardDetails.appendChild(title);
       cardDetails.appendChild(price);
+      cardDetails.appendChild(space);
       cardDetails.appendChild(addToCartBtn);
 
       // Append card details to card
