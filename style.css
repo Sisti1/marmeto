@@ -1,44 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
-/* html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
-}
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
-}
-
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-  text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
-} */
-
 h1{
   
   font-weight: bolder;
   text-align: center;
-  
+  font-family: "Roboto",flex;
+  font-size:45px;
 }
 
 
@@ -47,6 +18,11 @@ h1{
   width: 100%;
   justify-content: center;
 
+}
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
 }
 
 
@@ -69,22 +45,26 @@ h1{
   cursor: pointer;
   width: 500px;
   transition: background-color 0.3s ease;
+  font-size: 18px;
 }
 
 .toggle-btn.active {
   background-color: black;
   color: white;
+  font-family: "Roboto",flex;
+  font-size: 18px;
 }
 
 .toggle-btn:not(.active):hover {
   background-color: rgb(169, 166, 166);
-  
+  font-family: "Roboto",flex;
+  font-size:18px;
 }
 
 .card {
-  width: 250px;
-  margin-top: 20px;
-  margin-left: 100px;
+  width: 270px;
+  margin-top: 30px;
+  margin-left: 80px;
   
   border-radius: 4px;
   overflow: hidden;
@@ -97,8 +77,9 @@ h1{
 
 .card-image img {
   width: 100%;
-  height: 300px;
+  height: 270px;
   border-radius: 10px;
+  margin-bottom: 12px;
 }
 
 .overlay {
@@ -109,37 +90,60 @@ h1{
   height: 100%;
   background-color: transparent;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
 }
 
 .overlay-text {
-  color: #fff;
+  color: black;
   font-size: 18px;
   font-weight: bold;
+  font-family: "Roboto", flex;
+  padding: 2px;
+  background-color: white;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 4px;
 }
 
-
-
-.card-details h3 {
-  margin-top: 5px;
-  font-size: 22px;
+.card-details {
+  padding: 13px;
 }
+
+.first{
+  
+  font-family: "Roboto",flex;
+  font-weight: bolder;
+  font-size: 17px;
+  
+}
+
+.second{
+  font-family: "Roboto",flex;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
 
 .price {
+  margin-top: 5px;
   margin-bottom: 16px;
+  font-family: "Roboto",flex;
 }
 
 .original-price {
   text-decoration: line-through;
   color: #888;
   margin-right: 8px;
+  font-family: "Roboto",flex;
 }
 
 .discounted-price {
   font-weight: bold;
   color: #333;
   margin-right: 8px;
+  font-family: "Roboto",flex;
 }
 
 .discount {
@@ -157,10 +161,11 @@ h1{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3;
+  font-family: "Roboto",flex;
   
 }

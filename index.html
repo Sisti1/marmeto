@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
     <title>Coding Assesment L2 boilerplate</title>
   </head>
@@ -13,35 +17,21 @@
     <h1>SELECT YOUR CHOICE</h1>
     <div class="toggle-container">
       <div class="toggle-component">
-        <button class="toggle-btn active">Men</button>
-        <button class="toggle-btn">Women</button>
-        <button class="toggle-btn">Kids</button>
+        <button class="toggle-btn active" data-category="Men">
+          <i class="fas fa-male"></i> Men
+        </button>
+        <button class="toggle-btn" data-category="Women">
+          <i class="fas fa-female"></i> Women
+        </button>
+        <button class="toggle-btn" data-category="Kids">
+          <i class="fas fa-child"></i> Kids
+        </button>
       </div>
     </div>
 
-    
-  
-    <div class="card">
-        <div class="card-image">
-          <img src="https://manyavar.scene7.com/is/image/manyavar/I04_0R5A3796%20copy_20-10-2021-20-04:650x900" alt="Man in Kurta">
-          <div class="overlay">
-            <div class="overlay-text">Wedding Special</div>
-          </div>
-        </div>
-        <div class="card-details">
-          <h3>Mens Kurta• Manyvar</h3>
-          <div class="price">
-            <span class="discounted-price">Rs 1199.00</span>
-            <span class="original-price">1299.00</span>
-            <span class="discount">50% Off</span>
-          </div>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-      </div>
-  
+    <div id="dataList"></div>
 
     <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
   </body>
 </html>
- 
